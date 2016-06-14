@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+            <meta charset="UTF-8">
+            <title>Uredi posamezno opravilo</title>
+            <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+
+    <body>
+        <h1>Uredi opravilo:</h1>
+            <form action="/opravilo/{{ opravilo.key.id() }}/uredi" method="post">
+                    <input name="vnos" value="{{ opravilo.vnos }}">
+
+                    <button type="submit">OK</button>
+            </form>
+    </body>
+</html>

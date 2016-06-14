@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+            <meta charset="UTF-8">
+            <title>Briši opravilo</title>
+            <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+
+    <body>
+        <h1>Ali resnično želiš izbrisati opravilo?</h1>
+            <form action="/opravilo/{{ opravilo.key.id() }}/izbrisi" method="post">
+
+
+                    <button type="submit">DA,izbrisi</button>
+            </form>
+    </body>
+</html>

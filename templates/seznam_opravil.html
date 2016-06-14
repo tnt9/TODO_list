@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+            <meta charset="UTF-8">
+            <title>Seznam opravil</title>
+            <link rel="stylesheet" href="/assets/css/style.css">
+            <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+
+    <body>
+
+    <h1>Seznam opravil</h1>
+    <br>
+    {% for opravilo in seznam %}
+
+        <p><a href="/opravilo/{{ opravilo.key.id() }}">{{ opravilo.vnos }}</a>, {{ opravilo.key.id() }}, {{ opravilo.nastanek }}
+        <a href="/opravilo/{{ opravilo.key.id() }}/uredi" style="color: #5c8a8a; margin-left: 1em">Uredi</a>
+        </p>
+    {% endfor %}
+
+    <br>
+    <p><a href="seznam-izbrisanih-opravil" style="font-size: 0.75em; color:#ff66cc">Seznam izbrisanih opravil</a></p>
+    </body>
+</html>
